@@ -1,2 +1,9 @@
 # Feature-Selection-as-Reinforcement-Learning
-Bandit based Reinforcement Learning applied on Feature selection, using an improved UCT Algorithm
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//    This code is an implementation of the algorithm described in (https://hal.inria.fr/inria-00484049/document)    //
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// The feature selection algorithm is run on the training set "dataset.dat.                                          //
+// The reading function can be modified in dataset.cpp                                                               //
+// The algorithm is based on bandit reinforcement learning, and is an improved version of UCT                        //
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
