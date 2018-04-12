@@ -88,6 +88,7 @@ feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
 ```
 
 
+The fact that the stopping feature has been selected a the stopping feature *fs* high number of times indicate that the algorithm might have converged.
 plot graph
 
 
