@@ -11,7 +11,7 @@ Compiling require the `boost` library (available at https://www.boost.org/) and 
 To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `src/Makefile` with a command prompt if you are using Make.
 
 #### Datasets
-The feature selection algorithm is run on the training set `src/dataset.dat`. It is a matrix L[n][f+1] where n is the number of training example and f the number of features, the last colomun in the file correspond to the labels. Any modification related to the training set can be performed in `src/dataset.cpp`   
+The feature selection algorithm is run on the training set `src/dataset.dat`. It is a matrix L[n][f+1] where n is the number of training example and f the number of features, the last colomun in the file correspond to the labels. Any modification related to the training set can be implemented in `src/dataset.cpp`   
 
 
 #### Simulation parameters
