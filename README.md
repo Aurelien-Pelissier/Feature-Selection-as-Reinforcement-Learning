@@ -20,7 +20,7 @@ The main simulation parameters can be changed in `src/Main.cbp`.
 ```c++
     Nt = 100000;   //Number of iterations of the simulation
     MA = 0;        //Many-Armed behavior, put 0 for Discrete and 1 for Continuous
-    q = 0.98;      //Random expansion parameter, used to control the average depth in the random phase, |q|<1, high q -> deep exploration
+    q = 0.98;      //Random expansion parameter, used to control the average depth in the random phase, |q|<1
     k = 5;         //Number of nearest neighbors involved in the reward function calculation
     r = 6;         //Ratio of aggressive subsample size / Training set size
     ce = 0.5;      //UCB exploration control parameter (used in both discrete and continuous heuristic)
