@@ -69,7 +69,7 @@ Node T[29] with feature subset:
  T_F = 92182
 
 Child Nodes:
-feature    t_f       mu_f     sg_f      lRAVE_f    tl_f
+feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
    408      000417    0.7678   0.0878    0.7675     420
    568      001166    0.7788   0.0886    0.7779     1188
    699      000627    0.7827   0.0866    0.7821     635
