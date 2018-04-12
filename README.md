@@ -7,7 +7,7 @@ This code is an implementation of the algorithm described in (https://hal.inria.
 ## Running the code
 
 #### Requirements
-Compiling the code require the `boost` library (available at https://www.boost.org/) and a `c++14` compiler.
+Compiling require the `boost` library (available at https://www.boost.org/) and a `c++14` compiler.
 To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `src/Makefile` with a command prompt if you are using Make.
 
 #### Datasets
