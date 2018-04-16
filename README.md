@@ -1,6 +1,6 @@
 # Feature-Selection-as-Reinforcement-Learning
 
-<img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Raman-uPL-Spectra-Analysis/master/img/latt.png" width=400>
+<img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/latt.png" width=400>
 
 Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. This repository contains the source code to perform feature selection by reinforcement learning, with a Monte carlo search tree. The algorithm is based on a publication presented an international machine learning conference in 2010 (https://hal.inria.fr/inria-00484049/document).
 
