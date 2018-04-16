@@ -10,7 +10,7 @@ Dataset often contains many features that are either redundant or irrelevant, an
 
 #### Requirements
 Compiling require the `boost` library (available at https://www.boost.org/) and a `c++14` compiler.
-To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `src/Makefile` with a command prompt if you are using Make.
+To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `src/Makefile` in a command prompt if you are using Make.
 
 #### Datasets
 The feature selection algorithm is run on the training set `src/dataset.dat`. It is a matrix L[n][f+1] where n is the number of training example and f the number of features, the last colomun in the file correspond to the labels. Any modification related to the training set can be implemented in `src/dataset.cpp`   
@@ -37,13 +37,13 @@ For details about the parameters, please refer to the implementation details des
 
 
 #### Complexity
-The computation time of the algorithm scale with O(n^2\*f/r) dur to the k nearest neighboor search involved in the reward calculation.
+The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
 
 
 ## Results
 
-As a proof of concept, the algorithm is run on a linear dataset with 3 good features, 5 redundant features, and 7 random features.
-The simulation qhould converge to a feature subset of size 3.
+As a proof of concept, the algorithm is run on a linear dataset with 3 features, 5 redundant features, and 7 random features.
+The simulation should converge to a feature subset of size 3.
 when the simulation is finished, the program return :
 
 - The best feature subset 
@@ -53,7 +53,7 @@ when the simulation is finished, the program return :
 
 All the informations are available in output files `Output_Tree.txt`, `Output_Reward.txt` and `Result.txt`.
 
-#### interpretation of the result
+#### Interpretation of the result
 
 - The best not is considered to be the most visited path at the end of the search:
 
@@ -90,7 +90,7 @@ feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
 ```
 
 
-The fact that the stopping feature has been selected a the stopping feature *fs* high number of times indicate that the algorithm might have converged.
+The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged.
 plot graph
 
 
