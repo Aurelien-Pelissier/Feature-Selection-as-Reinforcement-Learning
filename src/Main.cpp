@@ -41,7 +41,7 @@ int main()
     bool MA = 0;         //Many-Armed behavior, put 0 for Discrete and 1 for Continuous
     double q = 0.98;     //Random expansion parameter, used to control the average depth in the random phase, |q|<1, high q -> deep exploration
     int k = 5;           //Number of nearest neighbors involved in the reward function calculation
-    int r = 6;          //Ratio of aggressive subsample size / Training set size
+    int r = 12;          //Ratio of aggressive subsample size / Training set size
     double ce = 2;       //UCB exploration control parameter (used in both discrete and continuous heuristic)
     double c = 20;       //Continuous heuristic exploration parameter (RAVE score weight)
     double cl = 1000;     //l-RAVE/g-RAVE weight
@@ -58,7 +58,7 @@ int main()
     string labels = "Madelon.labels";        //Training set file
     //vector < vector<float> > L = concatenate(read_matrix(data), read_matrix(labels));  //training set matrix L[n][f+1] read from set from the file
 
-    vector < vector<float> > L = linear_dataset(200,15); //it generates a training set automatically with a hypothtical linear function to check if the algorithm can solve easy problems
+    vector < vector<float> > L = linear_dataset(400,15); //it generates a training set automatically with a hypothtical linear function to check if the algorithm can solve easy problems
     //print_dataset(L);
 
 

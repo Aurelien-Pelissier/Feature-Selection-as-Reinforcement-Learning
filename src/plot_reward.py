@@ -5,7 +5,7 @@ import matplotlib
 from matplotlib import pyplot as plt
 from matplotlib import animation
 
-matplotlib.rcParams.update({'font.size': 14})
+matplotlib.rcParams.update({'font.size': 12})
 
 #Variable
 
