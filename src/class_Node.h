@@ -6,6 +6,9 @@
 #include <vector>
 #include <unordered_set>
 
+//using boost library
+#include <boost/dynamic_bitset.hpp>
+
 
 
 class Node
@@ -13,22 +16,23 @@ class Node
     public:
 
     //Builders & Destroyers
-    Node(std::vector<bool> F);
+    Node(boost::dynamic_bitset<> F, int node_address);
     ~Node();
 
     //Attributes
-    std::vector<bool> sub_F;              //Features subset
-    int nF;                               //number associated to feature subset
-    int F_size;                           //number of features in the subset
-    int T_F;                              //Nb of time the node has been visited
-    std::unordered_set<int> allowed_features;  //Allowed features (only for Discrete heuristic)
-    std::vector<int> t_f;                 //Number of time feature has been selected
-    std::vector<double> mu_f;              //Average reward for each feature
-    std::vector<double> sg_f;              //Variance of each feature
-    std::vector<std::pair<double, int>> lRAVE_f;   //Local RAVE score of each feature
-    double Node_av;                       //Average of all child node
-    double Node_Score;                    //Average when choosing the node in parent node
-    int N_final;                          //Number of time this node has been chosen final
+    int address;                                    //Node address in Tree T
+    boost::dynamic_bitset<> sub_F;                  //Features subset (binary)
+    int F_size;                                     //Number of features in the subset
+    int T_F;                                        //Nb of time the node has been visited
+    double av_F;                                    //Average of the node
+    double sg_F;                                    //Variance of the node
+    std::unordered_set<int> allowed_features;       //Allowed features (only for Discrete heuristic)
+    std::vector<int> address_f;                     //Address of the child nodes
+    std::vector<std::pair<double, int>> lRAVE_f;    //Local RAVE score of each feature
+    double Score;                                   //Score of the node (it is the average at the moment)
+    std::vector<double> fs;                         //all informations about stopping feature (tf, muf, sgf)
+    std::vector<double> fr;                         //all informations about random exploration from the node (tf, muf, sgf)
+    bool already_updated;                           //just a tool for the back-propagation
 
     //Methods
 

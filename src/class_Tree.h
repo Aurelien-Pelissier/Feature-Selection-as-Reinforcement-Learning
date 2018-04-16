@@ -21,7 +21,7 @@ class Tree
 
     //Attributes
     std::vector<Node> N;                            //Search tree (Dynamic Array of nodes)
-    std::unordered_map<std::vector<bool>, int> N_adress; //hash function to know the address of corresponding node
+    std::unordered_map<std::string, int> N_address; //hash function to know the address of corresponding node
 
     //Methods
 

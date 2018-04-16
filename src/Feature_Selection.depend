@@ -1,0 +1,996 @@
+# depslib dependency file v1.0
+1523003718 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\dataset.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+
+1522927333 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\main_feature_selection.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<bitset>
+	<unordered_map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"dataset.h"
+	"update.h"
+	"print.h"
+	"class_Params.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1522996647 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\mainf.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522839004 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\class_node.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1522994384 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\class_params.h
+	<vector>
+
+1522738950 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\class_tree.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_map>
+	"class_Node.h"
+
+1523003763 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\dataset.h
+	<string>
+	<vector>
+
+1522996336 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\update.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Path.h"
+	"class_Tree.h"
+
+1521826859 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\class_rave.h
+	<iostream>
+	<string>
+	<vector>
+
+1521826857 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\class_path.h
+
+1523003732 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\print.h
+	<string>
+	<vector>
+	<fstream>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Tree.h"
+
+1522996361 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\mainf_iterate.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"update.h"
+	"print.h"
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522996647 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\mainf_iterate_random.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"class_Node.h"
+
+1522998291 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\mainf_reward.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Params.h"
+
+1522842987 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\mainf_ucb.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523248610 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\print.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+	<unordered_map>
+	<map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"dataset.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522925926 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\update.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"update.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1522994313 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\class.cpp
+	"class_Node.h"
+	"class_Rave.h"
+	"class_Params.h"
+	"class_Tree.h"
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1523251444 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\2 - linear dataset (update ancestors)\main.cpp
+	<string>
+	<vector>
+	"mainf.h"
+	"dataset.h"
+	"class_Params.h"
+
+1523345626 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\class.cpp
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1522839004 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\class_node.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1522994384 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\class_params.h
+	<vector>
+
+1522738950 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\class_tree.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_map>
+	"class_Node.h"
+
+1523003718 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\dataset.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+
+1523347553 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\main.cpp
+	<string>
+	<vector>
+	"mainf.h"
+	"dataset.h"
+	"class_Params.h"
+
+1522996647 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\mainf.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523003763 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\dataset.h
+	<string>
+	<vector>
+
+1523346459 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\main_feature_selection.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<bitset>
+	<unordered_map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"dataset.h"
+	"update.h"
+	"print.h"
+	"class_Params.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1522996336 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\update.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Path.h"
+	"class_Tree.h"
+
+1521826857 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\class_path.h
+
+1523346053 d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\print.h
+	<string>
+	<vector>
+	<fstream>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522996361 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\mainf_iterate.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"update.h"
+	"print.h"
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522996647 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\mainf_iterate_random.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"class_Node.h"
+
+1522842987 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\mainf_ucb.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523345399 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\print.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+	<unordered_map>
+	<map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"dataset.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522925926 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\update.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"update.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1523349607 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\4 - reward improvement\1 - sf_sorted\mainf_reward.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Params.h"
+
+1523345626 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\class.cpp
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1522839004 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\class_node.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1522994384 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\class_params.h
+	<vector>
+
+1522738950 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\class_tree.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_map>
+	"class_Node.h"
+
+1523003718 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\dataset.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+
+1523358947 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\main_feature_selection.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<bitset>
+	<unordered_map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"dataset.h"
+	"update.h"
+	"print.h"
+	"class_Params.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1522996647 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\mainf.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523003763 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\dataset.h
+	<string>
+	<vector>
+
+1522996336 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\update.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Path.h"
+	"class_Tree.h"
+
+1521826857 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\class_path.h
+
+1523346053 d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\print.h
+	<string>
+	<vector>
+	<fstream>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522996361 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\mainf_iterate.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"update.h"
+	"print.h"
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522996647 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\mainf_iterate_random.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"class_Node.h"
+
+1523349607 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\mainf_reward.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Params.h"
+
+1522842987 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\mainf_ucb.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522925926 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\update.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"update.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1523361671 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\print.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+	<unordered_map>
+	<map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"dataset.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1523361326 source:d:\documents\google drive\stage m2\02 - implementation (1 month)\3 - theoretical training set\3 - l-rave\main.cpp
+	<string>
+	<vector>
+	"mainf.h"
+	"dataset.h"
+	"class_Params.h"
+
+1523345626 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\class.cpp
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1522839004 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\class_node.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1522994384 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\class_params.h
+	<vector>
+
+1522738950 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\class_tree.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_map>
+	"class_Node.h"
+
+1523624567 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\dataset.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+
+1523624393 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\main.cpp
+	<string>
+	<vector>
+	"mainf.h"
+	"dataset.h"
+	"class_Params.h"
+
+1522996647 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\mainf.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523617101 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\dataset.h
+	<string>
+	<vector>
+
+1522996361 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\mainf_iterate.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"update.h"
+	"print.h"
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522996336 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\update.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Path.h"
+	"class_Tree.h"
+
+1521826857 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\class_path.h
+
+1523346053 c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\print.h
+	<string>
+	<vector>
+	<fstream>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522996647 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\mainf_iterate_random.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"class_Node.h"
+
+1523624641 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\mainf_reward.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Params.h"
+
+1522842987 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\mainf_ucb.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523361671 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\print.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+	<unordered_map>
+	<map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"dataset.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522925926 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\update.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"update.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1523619636 source:c:\users\wq\google drive\stage m2\04 - experimental validation\test on madelon\main_feature_selection.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<bitset>
+	<unordered_map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"dataset.h"
+	"update.h"
+	"print.h"
+	"class_Params.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1523345626 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\class.cpp
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1522839004 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\class_node.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1522994384 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\class_params.h
+	<vector>
+
+1522738950 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\class_tree.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_map>
+	"class_Node.h"
+
+1523624567 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\dataset.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+
+1523619636 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\main_feature_selection.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<bitset>
+	<unordered_map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"dataset.h"
+	"update.h"
+	"print.h"
+	"class_Params.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1522996647 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\mainf.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523617101 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\dataset.h
+	<string>
+	<vector>
+
+1522996336 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\update.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Path.h"
+	"class_Tree.h"
+
+1521826857 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\class_path.h
+
+1523346053 d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\print.h
+	<string>
+	<vector>
+	<fstream>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522996361 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\mainf_iterate.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"update.h"
+	"print.h"
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522996647 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\mainf_iterate_random.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"class_Node.h"
+
+1523624641 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\mainf_reward.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Params.h"
+
+1522842987 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\mainf_ucb.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523361671 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\print.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+	<unordered_map>
+	<map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"dataset.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522925926 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\update.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"update.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1523840807 source:d:\documents\google drive\stage m2\04 - experimental validation\test on madelon\main.cpp
+	<string>
+	<vector>
+	"mainf.h"
+	"dataset.h"
+	"class_Params.h"
+
+1523345626 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\class.cpp
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1522839004 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\class_node.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1522994384 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\class_params.h
+	<vector>
+
+1522738950 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\class_tree.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_map>
+	"class_Node.h"
+
+1523888385 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\dataset.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+
+1523619636 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\main_feature_selection.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<bitset>
+	<unordered_map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"dataset.h"
+	"update.h"
+	"print.h"
+	"class_Params.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1522996647 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\mainf.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523617101 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\dataset.h
+	<string>
+	<vector>
+
+1522996336 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\update.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Path.h"
+	"class_Tree.h"
+
+1521826857 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\class_path.h
+
+1523346053 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\print.h
+	<string>
+	<vector>
+	<fstream>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522996361 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\mainf_iterate.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"update.h"
+	"print.h"
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1522996647 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\mainf_iterate_random.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"class_Node.h"
+
+1523888136 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\mainf_reward.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Params.h"
+
+1522842987 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\mainf_ucb.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1523361671 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\print.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+	<unordered_map>
+	<map>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"dataset.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1522925926 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\update.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"update.h"
+	"class_Node.h"
+	"class_Tree.h"
+
+1523887922 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\main.cpp
+	<string>
+	<vector>
+	"mainf.h"
+	"dataset.h"
+	"class_Params.h"
+

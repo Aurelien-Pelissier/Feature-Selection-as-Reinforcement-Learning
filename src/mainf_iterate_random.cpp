@@ -5,6 +5,9 @@
 #include <unordered_map>
 using namespace std;
 
+//libraries
+#include <boost/dynamic_bitset.hpp>
+
 //including functions
 #include "mainf.h"
 
@@ -15,20 +18,17 @@ using namespace std;
 
 
 
-int  iterate_random(Tree &T, vector<bool> &F, const Params &params)
-// Perform a random exploration of the true and return the FIRST randomly selected feature
-// The depth of the exploration is randomly determined by 1-q^|F|
-// If no exploration is done, the stopping feature is returned
+double  iterate_random(Tree &T, boost::dynamic_bitset<> &F, const Params &params)
+ //Perform a random exploration of the tree, the depth of the exploration is randomly determined by 1-q^|F|
+ //(It is possible that no exploration is performed)
 
 {
 
-    int fi1;
     int i;
     int zero_i;
-    bool it_first = true;
 
     int f = F.size()-1;   //number of features (without the stopping feature)
-    int F_size = count_if (F.begin(), F.end(), [](bool i) { return (i==1); }); //size of the feature subset
+    int F_size = F.count(); //size of the feature subset (equivalent to the number of 1)
 
 
     while (  ((double) rand() / (RAND_MAX)) < pow(params.q,F_size)   )
@@ -44,7 +44,6 @@ int  iterate_random(Tree &T, vector<bool> &F, const Params &params)
         for(int fi = 0; fi < f; fi++ ){
             if ((zero_i == i)&&(!F[fi])){ //= feature fi has been chosen
                 F[fi] = 1; //putting its value to one
-                if (it_first) fi1=fi;
                 break;
             }
             if (!F[fi]){
@@ -52,11 +51,11 @@ int  iterate_random(Tree &T, vector<bool> &F, const Params &params)
             }
         }
         F_size++;
-        it_first = false;
 
     }
-    if (it_first) fi1=f; //choosing the stopping feature if the tree isn't expanded
 
-    return fi1;
+    F[F.size()-1] = 1; //selecting the stopping feature at the end of the exploration
+
+    return reward(F, params);
 
 }
