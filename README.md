@@ -1,8 +1,7 @@
 # Feature-Selection-as-Reinforcement-Learning
 
 
-Dataset often contains many features that are either redundant or irrelevant, and removing it will not incure much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time.
-Feature selection is thus a key aspect in machine learning and many approach has been explored. This repository contains the source code to perform feature selection by reinforcement learning, with a Monte carlo search tree. this algorithm is based on the previous publication (https://hal.inria.fr/inria-00484049/document).
+Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time. Feature selection is thus a key aspect in machine learning and many approach has been explored. This repository contains the source code to perform feature selection by reinforcement learning, with a Monte carlo search tree. this algorithm is based on the previous publication (https://hal.inria.fr/inria-00484049/document).
 
 
 
