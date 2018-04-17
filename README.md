@@ -42,7 +42,7 @@ The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by
 
 ## Results
 
-As a proof of concept, the algorithm is run on a linear dataset with 3 features, 5 redundant features, and 7 random features.
+As a proof of concept, the algorithm is run on a linear dataset with 3 features, 5 redundant features, and 482 random features.
 The simulation should converge to a feature subset of size 3.
 when the simulation is finished, the program return :
 
