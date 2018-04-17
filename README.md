@@ -7,6 +7,16 @@ Dataset often contains many features that are either redundant or irrelevant, an
 
 ## Algorithm details
 
+#### UCT phase
+
+#### New node phase
+
+#### Random phase
+
+#### Backpropagation phase
+
+#### The stopping feature
+
 
 
 
