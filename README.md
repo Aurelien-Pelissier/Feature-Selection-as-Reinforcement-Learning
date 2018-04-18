@@ -26,7 +26,7 @@ Dataset often contains many features that are either redundant or irrelevant, an
 To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `src/Makefile` in a command prompt if you are using Make. It requires the `boost` library (available at https://www.boost.org/) and a `c++14` compiler.
 
 #### Datasets
-The dataset is implemented as a matrix `L[n][f+1]` where n is the number of training example and f the number of features, the last colomun in the matrix correspond to the labels. The folder contain different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `src/dataset.cpp`.
+The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contain different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `src/dataset.cpp`.
 
 
 #### Simulation parameters
@@ -106,7 +106,7 @@ feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
 ============================================================================================
 ```
 
-The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged. One can note that only 12 of the 500 features has been explored in this node, this has been implemented on purpose to strongly limit the exploration due the the high branching factor of the lattice. This can be changed by adjusting the parameter b. 
+The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged. One can note that only 12 of the 500 features has been explored in this node, this has been implemented on purpose to strongly limit the exploration due the the high branching factor of the lattice. This can be changed by adjusting the parameter *b*. 
 By running `plot_reward.py` (require `Python 3`), we optain the following graph.
 
 <img align="center" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/theo.png" width=450>
