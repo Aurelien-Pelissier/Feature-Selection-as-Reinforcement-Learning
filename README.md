@@ -116,7 +116,7 @@ By running `plot_reward.py` (requires `Python 3`), we optain the following graph
 
 <img align="center" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/theo.png" width=450>
 
-For the first ~10000 iterations, the algorithm kept exploring deeper, until it started to select stopping features and enventually explored at lower depth until it finally converged to depth = 3. One can not that each time the algorithm explored at depth higher than 3, the reward significantly decreased.
+For the first ~10000 iterations, the algorithm kept exploring deeper, but then started to select stopping features and enventually explored at lower depth until it finally converged to depth = 3. One can not that each time the algorithm explored at depth higher than 3, the reward significantly decreased.
 
 
 ### Feature selection on benchmark dataset
