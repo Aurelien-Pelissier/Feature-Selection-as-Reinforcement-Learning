@@ -7,11 +7,8 @@ Dataset often contains many features that are either redundant or irrelevant, an
 
 ## Algorithm details
 
-<img align="left" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=250>
+<img align="left" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=180>
 
-
-
-&nbsp;
 
 #### UCT phase
 
