@@ -72,7 +72,7 @@ All the informations are available in output files `Output_Tree.txt`, `Output_Re
 Most visited path:
  [ 4-280235  2-271382  5-208801  fs-118163 ]`
  
- These numbers correspond to the feature selected with the number of time it has been selected.
+ These numbers correspond to the feature selected with the number of time it has been selected. In this case, the most visited path is an accurate feature subset, because it contains 3 relevant features and no redundant features.
 
 ```c++
 Node T[795] with feature subset:
