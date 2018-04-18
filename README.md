@@ -55,7 +55,7 @@ The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by
 
 ## Results
 
-As a proof of concept, the algorithm is run on a theoretical dataset with f = 500 features and n = 600 examples. The features are (x, y, z) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (ax + by + cz >? 0). The simulation is run over 300000 iteration and should couverge to a feature subset of size 3. To generate the theoretical set, one can call `L = linear_dataset(n,f)`. When the simulation is finished, the program return :
+As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). The simulation is run over 300000 iteration and should couverge to a feature subset of size 3. To generate the theoretical set, one can call `L = linear_dataset(n,f)`. When the simulation is finished, the program return :
 
 - The best feature subset 
 - The computed g-RAVE score of all the features
