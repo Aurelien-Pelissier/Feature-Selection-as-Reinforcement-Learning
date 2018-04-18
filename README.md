@@ -78,7 +78,10 @@ All the informations are available in output files `Output_Tree.txt`, `Output_Re
 
 ### Feature selection on a theoretical training set
 
-As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). The simulation is run over 300000 iteration and should couverge to a feature subset of size 3. To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
+As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
+
+
+The simulation is run over 300000 iteration and should couverge to a feature subset of size 3. The results are:
 
 `
 Most visited path:
