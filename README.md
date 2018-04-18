@@ -5,6 +5,8 @@
 Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. This repository contains the source code to perform feature selection by reinforcement learning, based on  a Monte carlo lattice search. The algorithm is adapted from a publication presented at international machine learning conference in 2010 (https://hal.inria.fr/inria-00484049/document).
 
 
+&nbsp;
+
 ## Algorithm details
 
 <img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=180>
@@ -25,6 +27,8 @@ Dataset often contains many features that are either redundant or irrelevant, an
 The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
 
 
+
+&nbsp;
 
 ## Running the code
 
@@ -54,6 +58,8 @@ The main simulation parameters can be changed in `src/Main.cbp`.
 For details about the parameters, please refer to the implementation details described in (https://hal.inria.fr/inria-00484049/document).
 
 
+
+&nbsp;
 
 ## Results
 
@@ -118,5 +124,8 @@ By running `plot_reward.py` (requires `Python 3`), we optain the following graph
 
 For the first ~10000 iterations, the algorithm kept exploring deeper, but then started to select stopping features and enventually explored at lower depth until it finally converged to depth = 3. One can not that each time the algorithm explored at depth higher than 3, the reward significantly decreased.
 
+
+
+&nbsp;
 
 ### Feature selection on benchmark dataset
