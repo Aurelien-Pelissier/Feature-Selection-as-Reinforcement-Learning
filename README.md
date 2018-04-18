@@ -81,7 +81,6 @@ Node T[795] with feature subset:
  Feature subset size = 3
  Node Average = 0.9915
  Node Variance = 0.0149
- Node Score = 0.9915
  Node Final = 118163
  T_F = 208801
 
@@ -110,7 +109,7 @@ feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
 The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged. One can note that only 12 of the 500 features has been explored in this node, this has been implemented on purpose to strongly limit the exploration due the the high branching factor of the lattice. This can be changed by adjusting the parameter b. 
 By running `plot_reward.py` (require `Python 3`), we optain the following graph.
 
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/theo.png" width=300>
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/theo.png" width=500>
 
 
 #### Feature selection on benchmark dataset and comparison with CFS
