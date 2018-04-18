@@ -107,7 +107,8 @@ feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
 ```
 
 The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged. One can note that only 12 of the 500 features has been explored in this node, this has been implemented on purpose to strongly limit the exploration due the the high branching factor of the lattice. This can be changed by adjusting the parameter *b*. 
-By running `plot_reward.py` (require `Python 3`), we optain the following graph.
+
+By running `plot_reward.py` (require `Python 3`), we optain the following graph:
 
 <img align="center" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/theo.png" width=450>
 
