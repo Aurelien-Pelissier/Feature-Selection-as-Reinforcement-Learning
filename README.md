@@ -70,39 +70,47 @@ All the informations are available in output files `Output_Tree.txt`, `Output_Re
 
 `
 Most visited path:
- [ 2-92182  fs-87739 ]`
+ [ 4-280235  2-271382  5-208801  fs-118163 ]`
  
- This refer to the feature selected, and the number of time this feature has been selected.
+ The first number is the feature selected, and the second number correspond to the number of time this feature has been selected.
 
 ```c++
-Node T[29] with feature subset:
- 00100100000000000000000000
- Feature subset size = 1
- Node Average = 0.8221
- Node Variance = 0.0735
- Node Final = 87739
- T_F = 92182
+Node T[795] with feature subset:
+ 0010110000000000000000000...
+ Features  2  4  5
+ Feature subset size = 3
+ Node Average = 0.9915
+ Node Variance = 0.0149
+ Node Score = 0.9915
+ Node Final = 118163
+ T_F = 208801
 
 Child Nodes:
 feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
-   408      000417    0.7678   0.0878    0.7675     420
-   568      001166    0.7788   0.0886    0.7779     1188
-   699      000627    0.7827   0.0866    0.7821     635
-   707      000504    0.7732   0.0904    0.7729     506
-   766      001325    0.7858   0.0873    0.7837     1377
-   770      001700    0.7694   0.0914    0.7694     1700
-   893      000551    0.7784   0.0894    0.7748     649
+   076      014323    0.9812   0.0244    0.9817     23885
+   126      033734    0.9840   0.0216    0.9837     35844
+   171      022876    0.9800   0.0244    0.9807     24590
+   226      013478    0.9795   0.0243    0.9794     13856
+   270      009983    0.9778   0.0268    0.9799     18828
+   280      014602    0.9798   0.0245    0.9800     15132
+   290      008297    0.9737   0.0284    0.9741     9303
+   298      013559    0.9848   0.0225    0.9827     14965
+   358      022042    0.9844   0.0230    0.9844     22045
+   447      025873    0.9857   0.0208    0.9847     30149
+   482      015783    0.9789   0.0250    0.9794     16173
+   486      016675    0.9879   0.0181    0.9852     18322
 
-   fs       087739    0.8242   0.0720    0.8221     92182
+   fs       118163    0.9949   0.0100    0.9915     208801
 
-   fr       000031    0.7222   0.0729
+   fr       000001    0.9962   0.0000
 
 ============================================================================================
 ```
 
+The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged. One can note that only 12 of the 500 features has been explored in this node, this has been implemented on purpose to strongly limit the exploration due the the high branching factor of the lattice. This can be changed by adjusting the parameter b. 
+By running `plot_reward.py` (require `Python 3`), we optain the following graph.
 
-The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged.
-plot graph
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/theo.png" width=300>
 
 
 #### Feature selection on benchmark dataset and comparison with CFS
