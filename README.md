@@ -63,20 +63,22 @@ For details about the parameters, please refer to the implementation details des
 
 ## Results
 
-As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). The simulation is run over 300000 iteration and should couverge to a feature subset of size 3. To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
-
 When the simulation is finished, the program return :
 
-- The best feature subset 
+- The best feature subset (considered to be the most visited path at the end of the search)
 - The computed g-RAVE score of all the features
 - The reward and depth search after each iteration
 - The computation time
 
 All the informations are available in output files `Output_Tree.txt`, `Output_Reward.txt` and `Result.txt`.
 
-### Interpretation of the result
 
-- The best not is considered to be the most visited path at the end of the search:
+
+&nbsp;
+
+### Feature selection on a theoretical training set
+
+As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). The simulation is run over 300000 iteration and should couverge to a feature subset of size 3. To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
 
 `
 Most visited path:
