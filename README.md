@@ -72,7 +72,7 @@ All the informations are available in output files `Output_Tree.txt`, `Output_Re
 Most visited path:
  [ 4-280235  2-271382  5-208801  fs-118163 ]`
  
- The first number is the feature selected, and the second number correspond to the number of time this feature has been selected.
+ These numbers correspond to the feature selected with the number of time it has been selected.
 
 ```c++
 Node T[795] with feature subset:
