@@ -24,6 +24,9 @@ Dataset often contains many features that are either redundant or irrelevant, an
 #### The stopping feature
 
 
+#### Complexity
+The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
+
 
 
 ## Running the code
@@ -53,10 +56,6 @@ The main simulation parameters can be changed in `src/Main.cbp`.
 ```
 For details about the parameters, please refer to the implementation details described in (https://hal.inria.fr/inria-00484049/document).
 
-
-
-#### Complexity
-The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
 
 
 ## Results
