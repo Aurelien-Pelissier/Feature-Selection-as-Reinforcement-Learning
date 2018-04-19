@@ -68,7 +68,7 @@ Once the stopping feature has been selected, the exploration stops and the rewar
 
 ### Backpropagation phase
 
-For an optimized convergence speed, all of the parents nodes are updated. A node at depth *d* has *d* parents, which imply that there is *d*! nodes to be updated. While this scales exponentially and can become very long for deep depth, it is in practice not limiting the algorithm.
+For an optimized convergence time, all of the parents nodes are updated. A node at depth *d* has *d* parents, which imply that there is *d*! nodes to be updated. While this scales exponentially and can become very long for deep depth, it is in practice not limiting the algorithm.
 
 
 
