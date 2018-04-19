@@ -64,7 +64,7 @@ When a node with *TF*=0 is reached, we evaluate the node by performing random ex
 
 ### Reward Calculation
 
-Once the stopping feature has been selected, the exploration stops and the reward is calculated based on a k-Nearest-Neighboor (kNN) classifier. The advantage of kNN is that it requires no prerequisite training, and is not too computationally expensive. The complexity of the reward calculation is scaling as with O(*n*^2\**f*/*r*) and is limiting the algorithm to dataset with less than 10000 examples.
+Once the stopping feature has been selected, the exploration stops and the reward is computed based on a k-Nearest-Neighboor (kNN) classifier. The advantage of kNN is that it requires no prerequisite training, and is not too computationally expensive. The complexity of the reward calculation is scaling as with O(*n*^2\**f*/*r*) and is limiting the algorithm to dataset with less than 10000 examples.
 
 ### Backpropagation phase
 
