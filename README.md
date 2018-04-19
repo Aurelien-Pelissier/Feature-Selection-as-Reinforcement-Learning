@@ -5,9 +5,12 @@
 Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. This repository contains the source code to perform feature selection by reinforcement learning, based on  a Monte carlo lattice search. The algorithm is adapted from a publication presented at international machine learning conference in 2010 (https://hal.inria.fr/inria-00484049/document).
 
 
+&nbsp;
+
 ## Algorithm details
 
-<img align="left" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=250>
+<img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=180>
+
 
 #### UCT phase
 
@@ -20,7 +23,12 @@ Dataset often contains many features that are either redundant or irrelevant, an
 #### The stopping feature
 
 
+#### Complexity
+The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
 
+
+
+&nbsp;
 
 ## Running the code
 
@@ -51,26 +59,29 @@ For details about the parameters, please refer to the implementation details des
 
 
 
-#### Complexity
-The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
-
+&nbsp;
 
 ## Results
 
-As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). The simulation is run over 300000 iteration and should couverge to a feature subset of size 3. To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
-
 When the simulation is finished, the program return :
 
-- The best feature subset 
+- The best feature subset (considered to be the most visited path at the end of the search)
 - The computed g-RAVE score of all the features
 - The reward and depth search after each iteration
 - The computation time
 
 All the informations are available in output files `Output_Tree.txt`, `Output_Reward.txt` and `Result.txt`.
 
-### Interpretation of the result
 
-- The best not is considered to be the most visited path at the end of the search:
+
+&nbsp;
+
+### Feature selection on a theoretical training set
+
+As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
+The simulation is run over 300000 iteration and should couverge to a feature subset of size 3.
+
+#### Interpretation of the results
 
 `
 Most visited path:
@@ -110,13 +121,16 @@ feature     t_f       mu_f     sg_f      lRAVE_f    tl_f
 ============================================================================================
 ```
 
-The fact that the stopping feature *fs* has been selected a high number of times indicate that the algorithm might have converged. One can note that only 12 of the 500 features has been explored in this node, this has been implemented on purpose to strongly limit the exploration due the the high branching factor of the lattice. This can be changed by adjusting the parameter *b*. 
+The fact that the stopping feature *fs* has been selected a high number of times relatively to other features indicate that the algorithm might have converged. One can note that only 12 of the 500 features has been explored in this node, this has been implemented on purpose to strongly limit the exploration due the the high branching factor of the lattice. This can be changed by adjusting the parameter *b*. 
 
 By running `plot_reward.py` (requires `Python 3`), we optain the following graph:
 
 <img align="center" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/theo.png" width=450>
 
-For the first ~10000 iterations, the algorithm kept exploring deeper, until it started to select stopping features and enventually explored at lower depth until it finally converged to depth = 3. One can not that each time the algorithm explored at depth higher than 3, the reward significantly decreased.
+For the first ~10000 iterations, the algorithm kept exploring deeper, but then started to select stopping features and enventually explored at lower depth until it finally converged to depth = 3. One can note that each time the algorithm explored at depth higher than 3, the reward significantly decreased.
 
+
+
+&nbsp;
 
 ### Feature selection on benchmark dataset
