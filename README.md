@@ -53,21 +53,30 @@ for a node *F*, the slected child *f* node is the one which maximize its UCB Sco
 
 Due to the high branching factor of the tree, the exploration is limited to an *Allowed feature* set, which restrict the number of considered child nodes depending of *TF*. A new child node is added whenever int\[*TF*^*b*\] is incremented.
 
+#### The stopping feature
+
+For each node, we also consider the stopping feature *fs*:
+It allows the bandit phase to stop at the current node instead of adding new features.
+
 
 #### New node phase
 When a node with *TF*=0 is added, the node is added to the tree.
 
 #### Random phase
-$$UCB = test$$
 
+To evaluate a node, we perform random  exploration where the probability of chosing the stopping feature at depth *d* is 1 - *q*^*d*.
+
+#### Reward Calculation
+
+Once the stopping feature has been selected, the exploration stops and the reward is computed. The reward is calculated based on a nearest neighboor classifier. The advantage of Neareast neighbors is that it requires no prerequisite training, and is computationally cheap.
 
 #### Backpropagation phase
 
+For an optimized convergence speed, all of the parents nodes are updated. A node at depth *d* has *d* parents, which imply that there is *d*! nodes to be updated. While this scales exponentially and can become very long for deep depth, it is in practice not limiting the algorithm.
 
-#### The stopping feature
 
 
-#### Complexity
+### Complexity
 The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
 
 
