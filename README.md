@@ -7,28 +7,7 @@ Dataset often contains many features that are either redundant or irrelevant, an
 
 &nbsp;
 
-## Algorithm details
 
-<img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=180>
-
-
-#### UCT phase
-
-#### New node phase
-
-#### Random phase
-
-#### Backpropagation phase
-
-#### The stopping feature
-
-
-#### Complexity
-The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
-
-
-
-&nbsp;
 
 ## Running the code
 
@@ -56,6 +35,39 @@ The main simulation parameters can be changed in `src/Main.cbp`.
     L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
 ```
 For details about the parameters, please refer to the implementation details described in (https://hal.inria.fr/inria-00484049/document).
+
+
+
+&nbsp;
+
+
+
+## Algorithm details
+
+<img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=180>
+
+
+#### UCT phase
+for a node *F*, the slected child *f* node is the one which maximize its UCB Score:
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/UCB.png" width=200>
+Due to the high branching factor of the tree, the exploration is limited to an *Allowed feature* set, which restrict the number of considered child nodes depending of *TF*. A new child node is added whenever int\[*TF*^*b*\] is incremented.
+
+
+#### New node phase
+When a node with *TF*=0 is added, the node is added to the tree.
+
+#### Random phase
+
+
+
+#### Backpropagation phase
+
+
+#### The stopping feature
+
+
+#### Complexity
+The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
 
 
 
