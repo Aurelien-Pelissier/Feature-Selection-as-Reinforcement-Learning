@@ -58,7 +58,7 @@ Due to the high branching factor of the tree, the exploration is limited to an *
 When a node with *TF*=0 is added, the node is added to the tree.
 
 #### Random phase
-
+$$UCB = test$$
 
 
 #### Backpropagation phase
