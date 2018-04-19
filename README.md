@@ -62,7 +62,7 @@ It allows the bandit phase to stop at the current node instead of adding new fea
 
 When a node with *TF*=0 is reached, we evaluate the node by performing random exploration until the stopping feature *fs* is added. The probability of chosing  the stopping feature at depth *d* is set to 1-*q*^*d*.
 
-#### Reward Calculation
+### Reward Calculation
 
 Once the stopping feature has been selected, the exploration stops and the reward is calculated based on a k-Nearest-Neighboor (kNN) classifier. The advantage of kNN is that it requires no prerequisite training, and is not too computationally expensive. The complexity of the reward calculation is scaling as with O(*n*^2\**f*/*r*) and is limiting the algorithm to dataset with less than 10000 examples.
 
