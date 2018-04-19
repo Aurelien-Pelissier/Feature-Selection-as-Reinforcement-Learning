@@ -49,7 +49,7 @@ For details about the parameters, please refer to the implementation details des
 
 #### UCT phase
 for a node *F*, the slected child *f* node is the one which maximize its UCB Score:
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/UCB.png" width=200>
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/UCB.png" width=500>
 Due to the high branching factor of the tree, the exploration is limited to an *Allowed feature* set, which restrict the number of considered child nodes depending of *TF*. A new child node is added whenever int\[*TF*^*b*\] is incremented.
 
 
