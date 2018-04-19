@@ -49,14 +49,12 @@ For details about the parameters, please refer to the implementation details des
 
 #### UCT phase
 for a node *F*, the slected child *f* node is the one which maximize its UCB Score:
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/UCB.png" width=400>
-
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/UCB.png" width=400>  
 Due to the high branching factor of the tree, the exploration is limited to an *Allowed feature* set, which restrict the number of considered child nodes depending of *TF*. A new child node is added whenever int\[*TF*^*b*\] is incremented.
 
 #### The stopping feature
 
-For each node, we also consider the stopping feature *fs*:
-
+For each node, we also consider the stopping feature *fs*:  
 It allows the bandit phase to stop at the current node instead of adding new features.
 
 
@@ -65,8 +63,7 @@ When a node with *TF*=0 is added, the node is added to the tree.
 
 #### Random phase
 
-To evaluate a node, we perform random  exploration where the probability of chosing 
-
+To evaluate a node, we perform random  exploration where the probability of chosing  
 the stopping feature at depth *d* is 1 - *q*^*d*.
 
 #### Reward Calculation
