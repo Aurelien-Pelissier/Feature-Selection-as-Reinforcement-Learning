@@ -19,7 +19,7 @@ The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of tr
 
 
 #### Simulation parameters
-The main simulation parameters can be changed in `src/Main.cbp`.
+The main simulation parameters can be changed in `src/Main.cpp`.
 
 ```c++
     Nt = 100000;   //Number of iterations of the simulation
