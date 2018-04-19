@@ -60,8 +60,7 @@ It allows the bandit phase to stop at the current node instead of adding new fea
 
 ### Random phase
 
-When a node with *TF*=0 is recheas, we evaluate the node, by performing random exploration until the stopping feature *fs* is added:  
-The probability of chosing  the stopping feature at depth *d* is set to 1-*q*^*d*.
+When a node with *TF*=0 is recheas, we evaluate the node, by performing random exploration until the stopping feature *fs* is added: The probability of chosing  the stopping feature at depth *d* is set to 1-*q*^*d*.
 
 #### Reward Calculation
 
