@@ -56,6 +56,7 @@ Due to the high branching factor of the tree, the exploration is limited to an *
 #### The stopping feature
 
 For each node, we also consider the stopping feature *fs*:
+
 It allows the bandit phase to stop at the current node instead of adding new features.
 
 
@@ -64,7 +65,9 @@ When a node with *TF*=0 is added, the node is added to the tree.
 
 #### Random phase
 
-To evaluate a node, we perform random  exploration where the probability of chosing the stopping feature at depth *d* is 1 - *q*^*d*.
+To evaluate a node, we perform random  exploration where the probability of chosing 
+
+the stopping feature at depth *d* is 1 - *q*^*d*.
 
 #### Reward Calculation
 
