@@ -64,7 +64,7 @@ When a node with *TF*=0 is reached, we evaluate the node by performing random ex
 
 #### Reward Calculation
 
-Once the stopping feature has been selected, the exploration stops and the reward is computed. The reward is calculated based on a nearest neighboor classifier. The advantage of Neareast neighbors is that it requires no prerequisite training, and is not too computationally expensive. The complexity of the reward calculation scales with O(n^2\*f/r), this polynomial complexity with the training set size is limiting the algorithm to dataset with less than 10000 examples.
+Once the stopping feature has been selected, the exploration stops and the reward is calculated based on a nearest neighboor classifier. The advantage of Neareast neighbors is that it requires no prerequisite training, and is not too computationally expensive. The complexity of the reward calculation scales with O(n^2\*f/r), this polynomial complexity with the training set size is limiting the algorithm to dataset with less than 10000 examples.
 
 ### Backpropagation phase
 
