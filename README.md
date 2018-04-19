@@ -53,7 +53,7 @@ for a node *F*, the selected child *f* node is the one maximizing its UCB Score:
 *TF* is the number of visit of node *F*, and due to the high branching factor of the tree, the exploration is limited to an *Allowed feature* set, which restrict the number of considered child nodes depending of *TF*. A new child node is added whenever int\[*TF*^*b*\] is incremented. 
 
 To know which feature to add, we consider the one maximizing its g-RAVE score.
-The g-RAVE score of feature *f* is defined as the acverage reward over all final node *F* containing *f*
+The g-RAVE score of feature *f* is defined as the average reward over all final node *F* containing *f*
 
 
 #### The stopping feature
