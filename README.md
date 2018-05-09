@@ -151,4 +151,4 @@ For the first ~10000 iterations, the algorithm kept exploring deeper, but then s
 
 &nbsp;
 
-### Feature selection on benchmark dataset
+### Feature selection on Raman spectra
