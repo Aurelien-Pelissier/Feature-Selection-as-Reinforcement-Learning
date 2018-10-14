@@ -2,7 +2,7 @@
 
 <img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/latt.png" width=400>
 
-Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. This repository contains the source code to perform feature selection by reinforcement learning, based on  a Monte carlo lattice search. The algorithm is adapted from a publication presented at international machine learning conference in 2010 (https://hal.inria.fr/inria-00484049/document).
+Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. This repository contains the source code to perform feature selection with a reinforcement learning approach, where the feature set state space is represented by a Direct Acyclic Graph (DAG). The Monte Carlo search return a candidate for the best leaf after a fixed number of iteration. This repository contains the C++ implementation of two algorithms. The first one, FUSE (https://hal.inria.fr/inria-00484049/document), start from the empty feature subset and relies on UCT to identify the best leaf in the feature DAG, while the second one, BLI-MCDS (https://docdro.id/e09o21k) solve the Best Arm Identification problem at different stage in the DAG until a stopping condition is verified.
 
 
 &nbsp;
@@ -15,11 +15,11 @@ Dataset often contains many features that are either redundant or irrelevant, an
 To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `src/Makefile` in a command prompt if you are using Make. It requires the `boost` library (available at https://www.boost.org/) and a `c++14` compiler.
 
 #### Datasets
-The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contain different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `src/dataset.cpp`.
+The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `src/dataset.cpp`.
 
 
 #### Simulation parameters
-The main simulation parameters can be changed in `src/Main.cbp`.
+The main simulation parameters can be changed in `src/Main.cpp`.
 
 ```c++
     Nt = 100000;   //Number of iterations of the simulation
@@ -47,28 +47,33 @@ For details about the parameters, please refer to the implementation details des
 <img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=200>
 
 
-#### UCT phase
-for a node *F*, the slected child *f* node is the one which maximize its UCB Score:
-<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/UCB.png" width=400>
+### UCT phase
+for a node *F*, the selected child *f* node is the one maximizing its UCB Score:
+<img src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/UCB.png" width=400>  
+*TF* is the number of visit of node *F*, and due to the high branching factor of the tree, the exploration is limited to an *Allowed feature* set, which restrict the number of considered child nodes depending of *TF*. A new child node is added whenever int\[*TF*^*b*\] is incremented. 
 
-Due to the high branching factor of the tree, the exploration is limited to an *Allowed feature* set, which restrict the number of considered child nodes depending of *TF*. A new child node is added whenever int\[*TF*^*b*\] is incremented.
-
-
-#### New node phase
-When a node with *TF*=0 is added, the node is added to the tree.
-
-#### Random phase
-$$UCB = test$$
-
-
-#### Backpropagation phase
+To know which feature to add, we consider the one maximizing its g-RAVE score.
+The g-RAVE score of feature *f* is defined as the average reward over all final node *F* containing *f*
 
 
 #### The stopping feature
 
+For each node, we also consider the stopping feature *fs*:  
+It allows the bandit phase to stop at the current node instead of adding new features.
 
-#### Complexity
-The computation time of the algorithm scale with O(n^2\*f/r), it is dominated by the k nearest neighboor search involved in the reward calculation.
+
+### Random phase
+
+When a node with *TF*=0 is reached, we evaluate the node by performing random exploration until the stopping feature *fs* is added. The probability of chosing  the stopping feature at depth *d* is set to 1-*q*^*d*.
+
+### Reward Calculation
+
+Once the stopping feature has been selected, the exploration stops and the reward is computed based on a k-Nearest-Neighboor (kNN) classifier. The advantage of kNN is that it requires no prerequisite training, and is not too computationally expensive. The complexity of the reward calculation is scaling as O(*n*^2\**f*/*r*) and is limiting the algorithm to dataset with less than 10000 examples.
+
+### Backpropagation phase
+
+For an optimized convergence time, all of the parents nodes are updated. A node at depth *d* has *d* parents, which imply that there is *d*! nodes to be updated. While this scales exponentially and can become very long for high depth, it is in practice not limiting the algorithm.
+
 
 
 
@@ -91,7 +96,7 @@ All the informations are available in output files `Output_Tree.txt`, `Output_Re
 
 ### Feature selection on a theoretical training set
 
-As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a binary classifier: (a*x* + b*y* + c*z* >? 0). To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
+As a proof of concept, the algorithm is run on a theoretical dataset with *f* = 500 features and *n* = 600 examples. The features are (*x*, *y*, *z*) + 5 redundant features + 492 random features, and the training set is generated using a linear binary classifier: (a*x* + b*y* + c*z* >? 0). To generate the theoretical set, one can call `L = linear_dataset(n,f)`. 
 The simulation is run over 300000 iteration and should couverge to a feature subset of size 3.
 
 #### Interpretation of the results
@@ -146,4 +151,3 @@ For the first ~10000 iterations, the algorithm kept exploring deeper, but then s
 
 &nbsp;
 
-### Feature selection on benchmark dataset
