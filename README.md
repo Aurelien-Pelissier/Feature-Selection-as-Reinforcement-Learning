@@ -44,7 +44,7 @@ For details about the parameters, please refer to the implementation details des
 
 
 
-## Algorithm details
+## FUSE Algorithm details
 
 <img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=200>
 
