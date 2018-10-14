@@ -17,7 +17,7 @@ This repository contains the source code to perform feature selection with a rei
 Both algorithm are available in the `src/` foler, compiling requires the `boost` library (available at https://www.boost.org/) and a `c++14` compiler. To compile the code, you can either open the project file `Feature_Selection.cbp` in Code::Blocks, or run the `Makefile` in a command prompt if you are using Make. 
 
 #### Datasets
-The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `src/dataset.cpp`.
+The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `dataset.cpp`.
 
 
 #### Simulation parameters
