@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Feature_Selection_FUSE" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Feature_Selection" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Feature_Selection" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="01_Main.cpp" />
+		<Unit filename="02_Main_FEATURE_SELECTION.cpp" />
+		<Unit filename="class.cpp" />
+		<Unit filename="class_Node.h" />
+		<Unit filename="class_Params.h" />
+		<Unit filename="class_Path.h" />
+		<Unit filename="class_Tree.h" />
+		<Unit filename="class_Variables.h" />
+		<Unit filename="dataset.cpp" />
+		<Unit filename="dataset.h" />
+		<Unit filename="kNN.cpp" />
+		<Unit filename="kNN.h" />
+		<Unit filename="kdtree/alglibinternal.cpp" />
+		<Unit filename="kdtree/alglibinternal.h" />
+		<Unit filename="kdtree/alglibmisc.cpp" />
+		<Unit filename="kdtree/alglibmisc.h" />
+		<Unit filename="kdtree/ap.cpp" />
+		<Unit filename="kdtree/ap.h" />
+		<Unit filename="kdtree/dataanalysis.cpp" />
+		<Unit filename="kdtree/dataanalysis.h" />
+		<Unit filename="kdtree/diffequations.cpp" />
+		<Unit filename="kdtree/diffequations.h" />
+		<Unit filename="kdtree/fasttransforms.cpp" />
+		<Unit filename="kdtree/fasttransforms.h" />
+		<Unit filename="kdtree/integration.cpp" />
+		<Unit filename="kdtree/integration.h" />
+		<Unit filename="kdtree/interpolation.cpp" />
+		<Unit filename="kdtree/interpolation.h" />
+		<Unit filename="kdtree/linalg.cpp" />
+		<Unit filename="kdtree/linalg.h" />
+		<Unit filename="kdtree/optimization.cpp" />
+		<Unit filename="kdtree/optimization.h" />
+		<Unit filename="kdtree/solvers.cpp" />
+		<Unit filename="kdtree/solvers.h" />
+		<Unit filename="kdtree/specialfunctions.cpp" />
+		<Unit filename="kdtree/specialfunctions.h" />
+		<Unit filename="kdtree/statistics.cpp" />
+		<Unit filename="kdtree/statistics.h" />
+		<Unit filename="kdtree/stdafx.h" />
+		<Unit filename="mainf.h" />
+		<Unit filename="mainf_UCB.cpp" />
+		<Unit filename="mainf_iterate.cpp" />
+		<Unit filename="mainf_iterate_random.cpp" />
+		<Unit filename="mainf_reward.cpp" />
+		<Unit filename="print.cpp" />
+		<Unit filename="print.h" />
+		<Unit filename="quickselect.cpp" />
+		<Unit filename="quickselect.h" />
+		<Unit filename="select_features.cpp" />
+		<Unit filename="select_features.h" />
+		<Unit filename="update.cpp" />
+		<Unit filename="update.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
