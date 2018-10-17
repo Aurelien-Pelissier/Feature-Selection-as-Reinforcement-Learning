@@ -25,25 +25,6 @@ The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of tr
 We define a graph for which each node correspond to a feature set *F*, adding a feature to this feature set lead to a parent node, and removing a feature lead to a child node. The root of the graph is the empty feature subset. For each node, we also consider the stopping feature *fs*, which allows the search to stop at the current node instead of adding new features.
 
 
-#### Simulation parameters
-The main simulation parameters can be changed in `src/Main.cpp`.
-
-```c++
-    Nt = 100000;   //Number of iterations of the simulation
-    MA = 0;        //Many-Armed behavior, put 0 for Discrete and 1 for Continuous
-    q = 0.98;      //Random expansion parameter, used to control the average depth in the random phase, |q|<1
-    k = 5;         //Number of nearest neighbors involved in the reward function calculation
-    r = 6;         //Ratio of aggressive subsample size / Training set size
-    ce = 0.5;      //UCB exploration control parameter (used in both discrete and continuous heuristic)
-    c = 20;        //Continuous heuristic exploration parameter (RAVE score weight)
-    cl = 200;      //l-RAVE/g-RAVE weight
-    b = 0.2;       //Discrete heuristic exploration parameter, |b|<1
-    
-    L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
-```
-For details about the parameters, please refer to the implementation details described in (https://hal.inria.fr/inria-00484049/document).
-
-
 
 &nbsp;
 
@@ -75,6 +56,24 @@ Once the stopping feature has been selected, the exploration stops and the rewar
 
 For an optimized convergence time, all of the parents nodes are updated. A node at depth *d* has *d* parents, which imply that there is *d*! nodes to be updated. While this scales exponentially and can become very long for high depth, it is in practice not limiting the algorithm.
 
+
+#### Simulation parameters
+The main simulation parameters can be changed in `src/Main.cpp`.
+
+```c++
+    Nt = 100000;   //Number of iterations of the simulation
+    MA = 0;        //Many-Armed behavior, put 0 for Discrete and 1 for Continuous
+    q = 0.98;      //Random expansion parameter, used to control the average depth in the random phase, |q|<1
+    k = 5;         //Number of nearest neighbors involved in the reward function calculation
+    r = 6;         //Ratio of aggressive subsample size / Training set size
+    ce = 0.5;      //UCB exploration control parameter (used in both discrete and continuous heuristic)
+    c = 20;        //Continuous heuristic exploration parameter (RAVE score weight)
+    cl = 200;      //l-RAVE/g-RAVE weight
+    b = 0.2;       //Discrete heuristic exploration parameter, |b|<1
+    
+    L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
+```
+For details about the parameters, please refer to the implementation details described in (https://hal.inria.fr/inria-00484049/document).
 
 
 
