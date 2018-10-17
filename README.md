@@ -79,6 +79,10 @@ For details about the parameters, please refer to the implementation details des
 
 &nbsp;
 
+## BLI-MCDS Algorithm details
+
+&nbsp;
+
 ## Results
 
 When the simulation is finished, the program return :
