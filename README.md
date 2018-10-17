@@ -20,8 +20,8 @@ Both algorithm are available in the `src/` foler, compiling requires the `boost`
 The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `dataset.cpp`.
 
 
-<img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/FS.png" width=200>
 #### The feature set space and stopping feature
+<img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/FS.png" width=200>
 We define a graph for which each node correspond to a feature set *F*, adding a feature to this feature set lead to a parent node, and removing a feature lead to a child node. The root of the graph is the empty feature subset. For each node, we also consider the stopping feature *fs*, which allows the search to stop at the current node instead of adding new features.
 
 
