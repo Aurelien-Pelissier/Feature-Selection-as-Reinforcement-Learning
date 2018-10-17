@@ -19,6 +19,9 @@ Both algorithm are available in the `src/` foler, compiling requires the `boost`
 #### Datasets
 The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `dataset.cpp`.
 
+#### The feature set space and stopping feature
+We define a graph for which each node correspond to a feature set *F*, adding a feature to this feature set lead to a parent node, and removing a feature lead to a child node. The root of the graph is the empty feature subset. For each node, we also consider the stopping feature *fs*, which allows the search to stop at the current node instead of adding new features.
+
 
 #### Simulation parameters
 The main simulation parameters can be changed in `src/Main.cpp`.
@@ -56,12 +59,6 @@ for a node *F*, the selected child *f* node is the one maximizing its UCB Score:
 
 To know which feature to add, we consider the one maximizing its g-RAVE score.
 The g-RAVE score of feature *f* is defined as the average reward over all final node *F* containing *f*
-
-
-#### The stopping feature
-
-For each node, we also consider the stopping feature *fs*:  
-It allows the bandit phase to stop at the current node instead of adding new features.
 
 
 ### Random phase
