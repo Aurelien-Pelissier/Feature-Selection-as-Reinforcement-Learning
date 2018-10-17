@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FS-UGapE-expanding" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/UGape-fixed" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/UGape-fixed" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="01_main.cpp" />
+		<Unit filename="02_Run_BAI_MCLS.cpp" />
+		<Unit filename="Backpropagate.cpp" />
+		<Unit filename="Build_Graph.cpp" />
+		<Unit filename="Evaluation.cpp" />
+		<Unit filename="Expand_graph.cpp" />
+		<Unit filename="Pull_representative_leaf.cpp" />
+		<Unit filename="Random_phase.cpp" />
+		<Unit filename="UGapE.cpp" />
+		<Unit filename="Update.cpp" />
+		<Unit filename="class.cpp" />
+		<Unit filename="class_Node.h" />
+		<Unit filename="class_Params.h" />
+		<Unit filename="class_Results.h" />
+		<Unit filename="class_Tree.h" />
+		<Unit filename="class_Variables.h" />
+		<Unit filename="functions.h" />
+		<Unit filename="kdtree/alglibinternal.h" />
+		<Unit filename="kdtree/alglibmisc.h" />
+		<Unit filename="kdtree/ap.h" />
+		<Unit filename="kdtree/dataanalysis.h" />
+		<Unit filename="kdtree/diffequations.h" />
+		<Unit filename="kdtree/fasttransforms.h" />
+		<Unit filename="kdtree/integration.h" />
+		<Unit filename="kdtree/interpolation.h" />
+		<Unit filename="kdtree/linalg.h" />
+		<Unit filename="kdtree/optimization.h" />
+		<Unit filename="kdtree/solvers.h" />
+		<Unit filename="kdtree/specialfunctions.h" />
+		<Unit filename="kdtree/statistics.h" />
+		<Unit filename="kdtree/stdafx.h" />
+		<Unit filename="print.cpp" />
+		<Unit filename="print.h" />
+		<Unit filename="realdata/class_Node.h" />
+		<Unit filename="realdata/class_Params.h" />
+		<Unit filename="realdata/class_Tree.h" />
+		<Unit filename="realdata/dataset.cpp" />
+		<Unit filename="realdata/dataset.h" />
+		<Unit filename="realdata/kNN.cpp" />
+		<Unit filename="realdata/kNN.h" />
+		<Unit filename="realdata/kdtree/alglibinternal.cpp" />
+		<Unit filename="realdata/kdtree/alglibinternal.h" />
+		<Unit filename="realdata/kdtree/alglibmisc.cpp" />
+		<Unit filename="realdata/kdtree/alglibmisc.h" />
+		<Unit filename="realdata/kdtree/ap.cpp" />
+		<Unit filename="realdata/kdtree/ap.h" />
+		<Unit filename="realdata/kdtree/dataanalysis.cpp" />
+		<Unit filename="realdata/kdtree/dataanalysis.h" />
+		<Unit filename="realdata/kdtree/diffequations.cpp" />
+		<Unit filename="realdata/kdtree/diffequations.h" />
+		<Unit filename="realdata/kdtree/fasttransforms.cpp" />
+		<Unit filename="realdata/kdtree/fasttransforms.h" />
+		<Unit filename="realdata/kdtree/integration.cpp" />
+		<Unit filename="realdata/kdtree/integration.h" />
+		<Unit filename="realdata/kdtree/interpolation.cpp" />
+		<Unit filename="realdata/kdtree/interpolation.h" />
+		<Unit filename="realdata/kdtree/linalg.cpp" />
+		<Unit filename="realdata/kdtree/linalg.h" />
+		<Unit filename="realdata/kdtree/optimization.cpp" />
+		<Unit filename="realdata/kdtree/optimization.h" />
+		<Unit filename="realdata/kdtree/solvers.cpp" />
+		<Unit filename="realdata/kdtree/solvers.h" />
+		<Unit filename="realdata/kdtree/specialfunctions.cpp" />
+		<Unit filename="realdata/kdtree/specialfunctions.h" />
+		<Unit filename="realdata/kdtree/statistics.cpp" />
+		<Unit filename="realdata/kdtree/statistics.h" />
+		<Unit filename="realdata/kdtree/stdafx.h" />
+		<Unit filename="realdata/quickselect.cpp" />
+		<Unit filename="realdata/quickselect.h" />
+		<Unit filename="realdata/reward.cpp" />
+		<Unit filename="realdata/reward.h" />
+		<Unit filename="realdata/select_features.cpp" />
+		<Unit filename="realdata/select_features.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

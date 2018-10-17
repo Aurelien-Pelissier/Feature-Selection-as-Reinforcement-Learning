@@ -2,7 +2,9 @@
 
 <img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/latt.png" width=400>
 
-Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. This repository contains the source code to perform feature selection by reinforcement learning, based on  a Monte carlo lattice search. The algorithm is adapted from a publication presented at international machine learning conference in 2010 (https://hal.inria.fr/inria-00484049/document).
+Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. 
+
+This repository contains the source code to perform feature selection with a reinforcement learning approach, where the feature set state space is represented by a Direct Acyclic Graph (DAG). This repository contains the C++ implementation of two Monte Carlo DAG Search algorithms. The first one, FUSE (https://hal.inria.fr/inria-00484049/document), starts from the empty feature subset and relies on UCT to identify the best feature subest in the DAG with a fixed budget, while the second one, BLI-MCDS (https://docdro.id/e09o21k) solve the Best Arm Identification problem at different stage in the DAG until a stopping condition is verified.
 
 
 &nbsp;
@@ -12,10 +14,13 @@ Dataset often contains many features that are either redundant or irrelevant, an
 ## Running the code
 
 #### Requirements
-To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `src/Makefile` in a command prompt if you are using Make. It requires the `boost` library (available at https://www.boost.org/) and a `c++14` compiler.
+Both algorithm are available in the `src/` foler, compiling requires the `boost` library (available at https://www.boost.org/) and a `c++14` compiler. To compile the code, you can either open the project file `Feature_Selection.cbp` in Code::Blocks, or run the `Makefile` in a command prompt if you are using Make. 
 
 #### Datasets
-The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `src/dataset.cpp`.
+The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `dataset.cpp`.
+
+#### The feature set space and stopping feature
+We define a graph for which each node correspond to a feature set *F*, adding a feature to this feature set lead to a parent node, and removing a feature lead to a child node. The root of the graph is the empty feature subset. For each node, we also consider the stopping feature *fs*, which allows the search to stop at the current node instead of adding new features.
 
 
 #### Simulation parameters
@@ -42,7 +47,7 @@ For details about the parameters, please refer to the implementation details des
 
 
 
-## Algorithm details
+## FUSE Algorithm details
 
 <img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=200>
 
@@ -54,12 +59,6 @@ for a node *F*, the selected child *f* node is the one maximizing its UCB Score:
 
 To know which feature to add, we consider the one maximizing its g-RAVE score.
 The g-RAVE score of feature *f* is defined as the average reward over all final node *F* containing *f*
-
-
-#### The stopping feature
-
-For each node, we also consider the stopping feature *fs*:  
-It allows the bandit phase to stop at the current node instead of adding new features.
 
 
 ### Random phase
