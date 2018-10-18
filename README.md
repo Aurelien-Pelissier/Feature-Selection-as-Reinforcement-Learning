@@ -80,9 +80,10 @@ For details about the parameters, please refer to the implementation details des
 When the simulation is finished, the program mainly return :
 
 - The best feature subset (considered to be the path with highest average at the end of the search)
+
 `
-Most visited path:
- [ 4-280235  2-271382  5-208801  fs-118163 ]`
+Path with Highest average:
+  [ 4-0.9605  2-0.9802  5-0.9823  fs-0.9879 ]`
 - The reward and depth search after each iteration
 By running `plot_reward.py` (requires `Python 3`), we can plot the evelution of the reward during the search:
 
