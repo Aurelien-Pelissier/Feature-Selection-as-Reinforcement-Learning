@@ -69,7 +69,7 @@ The main simulation parameters can be changed in `src/Main.cpp`.
     m = 50;        //Size of the small subsample for the reward calculation
     ce = 0.5;      //UCB exploration control parameter
     cl = 200;      //l-RAVE/g-RAVE weight in RAVE score
-    b = 0.3;       //Discrete heuristic exploration parameter, |b|<1
+    b = 0.2;       //Discrete heuristic exploration parameter, |b|<1
     
     L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
 ```
@@ -94,17 +94,34 @@ All the informations are available in output files `Output_Tree.txt`, `Output_Re
 
 ## BLI-MCDS Algorithm details
 
-BLI-MCDS
+BLI-MCDS solve the Best Arm Identification problem at different nodes in the DAG to select the best feature subset in the fixed confidence setting, which mean that the algorithm stops when the returned feature set is theoretically guaranteed with confidence *1 - \delta* and precision *epsilon*.
+
+### Simulation parameters
+The main simulation parameters can be changed in `src/Main.cpp`.
+
+```c++
+    eps = 0.005;     //accuracy parameter
+    delta = 0.1;     //risk parameter
+    b = 0.3;         //expansion parameter 0 < b < 1
+    q = 0.98;        //Random expansion parameter, used to control the average depth in the random phase, |q|<1
+    k = 5;           //Number of nearest neighbors involved in the reward calculation
+    m = 50;          //Size of the small subsample for the reward calculation
+    cl = 200;        //l-RAVE/g-RAVE weight in RAVE score
+    
+    L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
+```
+For details about the parameters, please refer to the implementation details described in (https://docdro.id/e09o21k).
+
 &nbsp;
 
-## Results
+### Results
+
+When the simulation is finished, the program return the candidate for the best feature set and the number of leaf evaluated during the search.
+
+`
+Best feature subset after 278306:
+ [ 5  1  2 ] with reward [ 0.5907  0.9412  0.9943 ]` 
 
 
 
-
-
-
-
-
-&nbsp;
 
