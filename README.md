@@ -75,7 +75,7 @@ The main simulation parameters can be changed in `src/Main.cpp`.
 ```
 For details about the parameters, please refer to the implementation details described in (https://hal.inria.fr/inria-00484049/document).
 
-### Interpretation of the results
+### Output
 
 When the simulation is finished, the program mainly return :
 
@@ -115,7 +115,7 @@ For details about the parameters, please refer to the implementation details des
 
 &nbsp;
 
-### Results
+### Output
 
 When the simulation is finished, the program return the candidate for the best feature set and the number of leaf evaluated during the search.
 
