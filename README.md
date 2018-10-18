@@ -95,7 +95,7 @@ All the informations are available in output files `Output_Tree.txt`, `Output_Re
 
 ## BLI-MCDS Algorithm details
 
-BLI-MCDS solve the Best Arm Identification problem at different nodes in the DAG to select the best feature subset in the fixed confidence setting, which mean that the algorithm stops when the returned feature set is theoretically guaranteed with confidence *1 - delta* and precision *epsilon*.
+BLI-MCDS solve the Best Arm Identification problem at different nodes in the DAG to select the best feature subset in the fixed confidence setting, which means that the algorithm stops when the returned feature set is theoretically guaranteed with confidence *1 - delta* and precision *epsilon*.
 
 ### Simulation parameters
 The main simulation parameters can be changed in `src/Main.cpp`.
