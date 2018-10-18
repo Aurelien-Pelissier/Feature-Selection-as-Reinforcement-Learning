@@ -36,6 +36,7 @@ We define a graph for which each node correspond to a feature set F, adding a fe
 
 FUSE relies on the well known UCT algorithm to perform Monte Carlo seach in the feature DAG, and stop when the number of iteration is reached. At the end of the search, the returned feature subset is the one at the end of the path with highest average.
 
+### The four phases of one iteration
 
 #### UCT phase
 for a node *F*, the selected child *f* node is the one maximizing its UCB Score:
