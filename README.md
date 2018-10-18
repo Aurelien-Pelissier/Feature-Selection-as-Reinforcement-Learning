@@ -34,7 +34,7 @@ We define a graph for which each node correspond to a feature set F, adding a fe
 
 <img align="right" src="https://raw.githubusercontent.com/Aurelien-Pelissier/Feature-Selection-as-Reinforcement-Learning/master/img/MCTS.png" width=200>
 
-FUSE relies on the well known UCT algorithm to perform Monte Carlo seach in the feature DAG, and stop when the number of iteration is reached. At the end of the search, the returned feature subset is the one at the end of the path with highest average.
+FUSE relies on the well known UCT algorithm to perform Monte Carlo seach in the feature DAG, and stop when the given number of iteration is reached. At the end of the search, the returned feature subset is the one at the end of the path with highest average.
 
 ### The four phases of one iteration
 
