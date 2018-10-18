@@ -120,7 +120,7 @@ For details about the parameters, please refer to the implementation details des
 When the simulation is finished, the program return the candidate for the best feature set and the number of leaf evaluated during the search.
 
 `
-Best feature subset after 278306:
+Best feature subset after 278306 iterations:
  [ 5  1  2 ] with reward [ 0.5907  0.9412  0.9943 ]` 
 
 
