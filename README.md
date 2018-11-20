@@ -4,7 +4,7 @@
 
 Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. 
 
-This repository contains the source code to perform feature selection with a reinforcement learning approach, where the feature set state space is represented by a Direct Acyclic Graph (DAG). It provides the C++ implementation of two Monte Carlo DAG Search algorithms. The first one, FUSE (https://hal.inria.fr/inria-00484049/document), starts from the empty feature subset and relies on UCT to identify the best feature subest in the DAG with a fixed budget, while the second one, BLI-MCDS (https://docdro.id/e09o21k) solve the Best Arm Identification problem at different stage in the DAG in the fixed confidence setting.
+This repository contains the source code to perform feature selection with a reinforcement learning approach, where the feature set state space is represented by a Direct Acyclic Graph (DAG). It provides the C++ implementation of two Monte Carlo DAG Search algorithms. The first one, FUSE (https://hal.inria.fr/inria-00484049/document), starts from the empty feature subset and relies on UCT to identify the best feature subest in the DAG with a fixed budget, while the second one, BLI-MCDS (https://arxiv.org/abs/1811.07531) solve the Best Arm Identification problem at different stage in the DAG in the fixed confidence setting.
 
 
 &nbsp;
