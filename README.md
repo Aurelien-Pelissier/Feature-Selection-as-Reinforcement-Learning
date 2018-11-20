@@ -111,7 +111,7 @@ The main simulation parameters can be changed in `src/Main.cpp`.
     
     L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
 ```
-For details about the parameters, please refer to the implementation details described in (https://docdro.id/e09o21k).
+For details about the parameters, please refer to the implementation details described in (https://arxiv.org/abs/1811.07531).
 
 &nbsp;
 
