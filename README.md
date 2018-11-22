@@ -4,7 +4,7 @@
 
 Dataset often contains many features that are either redundant or irrelevant, and can thus be removed without incurring much loss of information. Decreasing the number of feature have the advantage of reducing overfitting, simplifying models, and also involve shorter training time, which makes it a key aspect in machine learning. 
 
-This repository contains the source code to perform feature selection with a reinforcement learning approach, where the feature set state space is represented by a Direct Acyclic Graph (DAG). It provides the C++ implementation of two Monte Carlo DAG Search algorithms. The first one, FUSE (https://hal.inria.fr/inria-00484049/document), starts from the empty feature subset and relies on UCT to identify the best feature subest in the DAG with a fixed budget, while the second one, BLI-MCDS (https://arxiv.org/abs/1811.07531) solve the Best Arm Identification problem at different stage in the DAG in the fixed confidence setting.
+This repository contains the source code to perform feature selection with a reinforcement learning approach, where the feature set state space is represented by a Direct Acyclic Graph (DAG). It provides the C++ implementation of two Monte Carlo DAG Search algorithms. The first one, FUSE [1], starts from the empty feature subset and relies on UCT to identify the best feature subest in the DAG with a fixed budget, while the second one, BLI-MCDS [2] solve the Best Arm Identification problem at different stage in the DAG in the fixed confidence setting.
 
 
 &nbsp;
@@ -73,7 +73,7 @@ The main simulation parameters can be changed in `src/Main.cpp`.
     
     L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
 ```
-For details about the parameters, please refer to the implementation details described in (https://hal.inria.fr/inria-00484049/document).
+For details about the parameters, please refer to the implementation details described in [1].
 
 ### Output
 
@@ -111,7 +111,7 @@ The main simulation parameters can be changed in `src/Main.cpp`.
     
     L[n][f+1] = read_dataset("dataset.dat");  //Training set matrix
 ```
-For details about the parameters, please refer to the implementation details described in (https://arxiv.org/abs/1811.07531).
+For details about the parameters, please refer to the implementation details described in [2].
 
 &nbsp;
 
@@ -125,4 +125,10 @@ Best feature subset after 278306 iterations:
 
 
 
+
+#References
+
+[1]: Gaudel, Romaric, and Michele Sebag. "Feature selection as a one-player game." International Conference on Machine Learning. 2010. [https://hal.inria.fr/inria-00484049/document].
+
+[2]: A.  Pelissier,  A.  Nakamura,  and  K.  Tabata.   Feature  selection  as  Monte-Carlo  Search  inGrowing Single Rooted Directed Acyclic Graph by Best Leaf Identification. ArXiv e-prints, November 2018 [https://arxiv.org/abs/1811.07531].
 
