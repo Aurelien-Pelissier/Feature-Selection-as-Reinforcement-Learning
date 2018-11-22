@@ -126,7 +126,7 @@ Best feature subset after 278306 iterations:
 
 
 
-## References
+# References
 
 [1]: Gaudel, Romaric, and Michele Sebag. "Feature selection as a one-player game." International Conference on Machine Learning. 2010. [https://hal.inria.fr/inria-00484049/document].
 
