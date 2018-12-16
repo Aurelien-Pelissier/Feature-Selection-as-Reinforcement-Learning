@@ -1629,3 +1629,275 @@
 	"stdafx.h"
 	"statistics.h"
 
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\01_main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	"mainf.h"
+	"dataset.h"
+	"select_features.h"
+	"class_Params.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\mainf.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+	"class_Variables.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\class_node.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\class_params.h
+	<vector>
+	<unordered_set>
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\class_tree.h
+	<iostream>
+	<string>
+	<vector>
+	<unordered_map>
+	"class_Node.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\class_variables.h
+	<vector>
+	"class_Tree.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\dataset.h
+	<string>
+	<vector>
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\select_features.h
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\02_main_feature_selection.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<bitset>
+	<unordered_map>
+	<chrono>
+	<windows.h>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"dataset.h"
+	"update.h"
+	"print.h"
+	"class_Params.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Variables.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\update.h
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Path.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\class_path.h
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\print.h
+	<string>
+	<vector>
+	<fstream>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+	"class_Variables.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\class.cpp
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+	"class_Variables.h"
+	<iostream>
+	<algorithm>
+	<string>
+	<unordered_set>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\dataset.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	"dataset.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\mainf_iterate.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"update.h"
+	"print.h"
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\mainf_iterate_random.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"mainf.h"
+	"class_Node.h"
+
+1544989044 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\knn.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"lib_kdtree/alglibmisc.h"
+	"lib_kdtree/stdafx.h"
+	"quickselect.h"
+	"class_Params.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\lib_kdtree\alglibmisc.h
+	"ap.h"
+	"alglibinternal.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\lib_kdtree\ap.h
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<string>
+	<cstring>
+	<iostream>
+	<math.h>
+	<list>
+	<vector>
+	<list.h>
+	<vector.h>
+	<list>
+	<vector>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<setjmp.h>
+	<math.h>
+	<stddef.h>
+	<stdint.h>
+	<emmintrin.h>
+	<xmmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<iostream>
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\lib_kdtree\alglibinternal.h
+	"ap.h"
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\lib_kdtree\stdafx.h
+
+1539767713 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\quickselect.h
+	<vector>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\mainf_ucb.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<utility>
+	<map>
+	<boost/dynamic_bitset.hpp>
+	"class_Node.h"
+	"class_Params.h"
+	"class_Tree.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\print.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<iomanip>
+	<fstream>
+	<unordered_map>
+	<map>
+	<set>
+	<chrono>
+	<boost/dynamic_bitset.hpp>
+	"print.h"
+	"dataset.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\quickselect.cpp
+	<vector>
+	"quickselect.h"
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\select_features.cpp
+	<iomanip>
+	<iostream>
+	<vector>
+	<unordered_set>
+	<boost/dynamic_bitset.hpp>
+
+1539767713 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\update.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<unordered_map>
+	<boost/dynamic_bitset.hpp>
+	"update.h"
+	"mainf.h"
+	"class_Node.h"
+	"class_Tree.h"
+	"class_Params.h"
+
+1544956141 source:d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\mainf_reward.cpp
+	<iostream>
+	<algorithm>
+	<string>
+	<vector>
+	<map>
+	<random>
+	<boost/dynamic_bitset.hpp>
+	"lib_kdtree/alglibmisc.h"
+	"lib_kdtree/stdafx.h"
+	"quickselect.h"
+	"select_features.h"
+	"kNN.h"
+	"dataset.h"
+	"class_Params.h"
+
+1544989057 d:\documents\documents\github\feature-selection-as-reinforcement-learning\src\fuse\knn.h
+	<map>
+	<vector>
+	<boost/dynamic_bitset.hpp>
+	"lib_kdtree/alglibmisc.h"
+	"lib_kdtree/stdafx.h"
+	"class_Params.h"
+
