@@ -56,7 +56,7 @@ Once the stopping feature has been selected, the exploration stops and the rewar
 
 #### Backpropagation phase
 
-For an optimized convergence time, all of the parents nodes are updated. A node at depth *d* has *d* parents, which imply that there is *d*! nodes to be updated. While this scales exponentially and can become very long for high depth, it is in practice not limiting the algorithm.
+The original FUSE algorithm backpropagate the reward only for the nodes withing the current path. Updating all the parents might results in unpracticle updating time as the number of nodes to be updated at depth *d* scales as *d*!. Updating all the parents also does not guarantee the convergence of the algorithm.
 
 
 ### Simulation parameters
