@@ -1,0 +1,23 @@
+
+==========================================================================================================================================================
+=====================================================   FEATURE SELECTION   -   SIMULATION RESULTS   =====================================================
+==========================================================================================================================================================
+
+Parameters: 
+   f = number of features,
+   n = number of example in the training set,
+   Nt = number of iteration in the simulation,
+   t = computation time [in s],
+   Tree = size of the tree at the end of computation
+   reward = computed reward for the last 1000 iteration,
+   depth = computed depth search for the last 1000 iterations,
+   N_final = number of time best node has been chosen final,
+
+   --> For the other parameters, please refer to the implementation details.
+
+
+============================================================================================================================================================
+|| ---- Main parameters ---- ||  --------------  Simulation results   -------------- || --------------  Other parameters of the simulation -------------- ||
+============================================================================================================================================================
+f        n          Nt          t[s]       Tree        reward     depth       N_final     q        k      m      ce       cl       MA    b        c
+0030     000300     0020000     000001     0000158     0.9427     03.3410     0000046     0.90     05     050     2     200     0     0.26     20

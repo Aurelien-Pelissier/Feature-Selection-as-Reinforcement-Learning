@@ -1,0 +1,284 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+limits
+-
+locale.h
+-
+ctype.h
+-
+intrin.h
+-
+windows.h
+-
+process.h
+-
+time.h
+-
+unistd.h
+-
+pthread.h
+-
+sched.h
+-
+windows.h
+-
+stdio.h
+-
+sys/time.h
+-
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+stdio.h
+-
+stdlib.h
+-
+stddef.h
+-
+string
+-
+cstring
+-
+iostream
+-
+math.h
+-
+list
+-
+vector
+-
+list.h
+-
+vector.h
+-
+list
+-
+vector
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+setjmp.h
+-
+math.h
+-
+stddef.h
+-
+stdint.h
+-
+emmintrin.h
+-
+xmmintrin.h
+-
+xmmintrin.h
+-
+emmintrin.h
+-
+iostream
+-
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/dataanalysis.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+dataanalysis.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/dataanalysis.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/dataanalysis.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+linalg.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+statistics.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/statistics.h
+specialfunctions.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/specialfunctions.h
+solvers.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/solvers.h
+optimization.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/optimization.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/diffequations.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+diffequations.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/diffequations.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/diffequations.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/fasttransforms.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+fasttransforms.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/fasttransforms.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/fasttransforms.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/integration.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+integration.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/integration.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/integration.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+linalg.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+specialfunctions.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/specialfunctions.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/interpolation.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+interpolation.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/interpolation.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/interpolation.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+linalg.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+solvers.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/solvers.h
+optimization.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/optimization.h
+specialfunctions.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/specialfunctions.h
+integration.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/integration.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+linalg.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/optimization.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+optimization.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/optimization.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/optimization.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+linalg.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+solvers.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/solvers.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/solvers.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+solvers.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/solvers.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/solvers.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+linalg.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/specialfunctions.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+specialfunctions.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/specialfunctions.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/specialfunctions.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/statistics.cpp
+stdafx.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+statistics.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/statistics.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/statistics.h
+ap.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/ap.h
+alglibinternal.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibinternal.h
+linalg.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/linalg.h
+specialfunctions.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/specialfunctions.h
+alglibmisc.h
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/alglibmisc.h
+
+C:/Users/aurel/Desktop/Github final/FUSE/src/lib_kdtree/stdafx.h
+
