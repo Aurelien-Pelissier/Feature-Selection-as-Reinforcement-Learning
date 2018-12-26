@@ -1,0 +1,2 @@
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc librealdata.a  CMakeFiles/realdata.dir/dataset.cpp.obj CMakeFiles/realdata.dir/kNN.cpp.obj CMakeFiles/realdata.dir/quickselect.cpp.obj CMakeFiles/realdata.dir/reward.cpp.obj CMakeFiles/realdata.dir/select_features.cpp.obj
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ranlib.exe librealdata.a

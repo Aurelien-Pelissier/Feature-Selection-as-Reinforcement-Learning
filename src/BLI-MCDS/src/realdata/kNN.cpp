@@ -3,11 +3,12 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <cmath>
 
 //libraries
 #include <boost/dynamic_bitset.hpp>
-#include "kdtree/alglibmisc.h"
-#include "kdtree/stdafx.h"
+#include "lib_kdtree/alglibmisc.h"
+#include "lib_kdtree/stdafx.h"
 
 //include functions
 #include "quickselect.h"

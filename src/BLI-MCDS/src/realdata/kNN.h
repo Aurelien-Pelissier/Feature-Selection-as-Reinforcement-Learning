@@ -6,8 +6,8 @@
 
 //using boost library
 #include <boost/dynamic_bitset.hpp>
-#include "kdtree/alglibmisc.h"
-#include "kdtree/stdafx.h"
+#include "lib_kdtree/alglibmisc.h"
+#include "lib_kdtree/stdafx.h"
 
 //including classes
 #include "class_Params.h"

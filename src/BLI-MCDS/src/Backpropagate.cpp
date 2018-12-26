@@ -5,6 +5,8 @@
 #include <unordered_map>
 #include <iomanip>
 #include <map>
+#include <cmath>
+
 
 //using boost library
 #include <boost/dynamic_bitset.hpp>
