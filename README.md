@@ -14,7 +14,7 @@ This repository contains the source code to perform feature selection with a rei
 ## Running the code
 
 #### Requirements
-Both algorithm are available in the `src/` foler, they require the `boost` library (available at https://www.boost.org/) and a `c++14` compiler. To compile the code, you can either open the project file `Feature_Selection.cbp` in Code::Blocks, or run the `Makefile` in a command prompt if you are using Make. The Makefile was generated for MinGW with Cmake, it is possible to generate other Makefiles with Cmake if you are using other compilers. Please make sure to specify (`BOOST_ROOT`, `BOOST_INCLUDEDIR`, `BOOST_LIBRARYDIR`) in `CMakeLists.txt` before your try to generate your Makefile.
+Both algorithm are available in the `src/` foler, they require the `boost` library (available at https://www.boost.org/) and a `c++14` compiler. To compile the code, you can either open the project file `src/Feature_Selection.cbp` in Code::Blocks, or run the `Cmake_build/Makefile` in a command prompt if you are using Make. The Makefiles were generated for MinGW with Cmake, it is possible to generate other Makefiles with Cmake if you are using other compilers.
 
 #### Datasets
 The dataset is implemented as a matrix `L[n][f+1]` where *n* is the number of training example and *f* the number of features, the last colomun in the matrix correspond to the labels. The folder contains different functions to read dataset files such as `read_dataset()`, and all the code related to the training set is implemented in `dataset.cpp`.
@@ -56,7 +56,7 @@ Once the stopping feature has been selected, the exploration stops and the rewar
 
 #### Backpropagation phase
 
-For an optimized convergence time, all of the parents nodes are updated. A node at depth *d* has *d* parents, which imply that there is *d*! nodes to be updated. While this scales exponentially and can become very long for high depth, it is in practice not limiting the algorithm.
+The original FUSE algorithm backpropagate the reward only for the nodes withing the current path. Updating all the parents might results in unpracticle updating time as the number of nodes to be updated at depth *d* scales as *d*!. Updating all the parents also does not guarantee the convergence of the UCT algorithm.
 
 
 ### Simulation parameters
