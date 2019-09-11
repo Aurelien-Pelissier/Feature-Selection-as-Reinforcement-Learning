@@ -1,4 +1,4 @@
-Note: an improved version of the FUSE algorithm, and with a python interface is available at https://github.com/Aurelien-Pelissier/AlphaFUSE.
+#### Note: an improved version of the FUSE algorithm, and with a python interface is available at https://github.com/Aurelien-Pelissier/AlphaFUSE.
 
 # Feature-Selection-as-Reinforcement-Learning
 
