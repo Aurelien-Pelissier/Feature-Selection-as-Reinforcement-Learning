@@ -132,5 +132,5 @@ Best feature subset after 278306 iterations:
 
 [1]: Gaudel, Romaric, and Michele Sebag. "Feature selection as a one-player game." International Conference on Machine Learning. 2010. [https://hal.inria.fr/inria-00484049/document].
 
-[2]: A.  Pelissier,  A.  Nakamura,  and  K.  Tabata.   "Feature  selection  as  Monte-Carlo  Search  in Growing Single Rooted Directed Acyclic Graph by Best Leaf Identification". ArXiv preprint, November 2018 [https://arxiv.org/abs/1811.07531].
+[2]: A.  Pelissier,  A.  Nakamura,  and  K.  Tabata.   "Feature  selection  as  Monte-Carlo  Search  in Growing Single Rooted Directed Acyclic Graph by Best Leaf Identification". Proceedings of the 2019 SIAM International Conference on Data Mining 2019, May 2019 [https://arxiv.org/abs/1811.07531].
 
